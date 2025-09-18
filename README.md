@@ -24,12 +24,6 @@ Each folder represents a different project, often focusing on a particular **dat
 
 ---
 
-## 🎯 Goal
-
-My goal with this repository is to **track my progress** and provide a **transparent look into my work**.  
-
-Feel free to explore the projects and dive into the code! 🚀
-
 ## First Project: analyzing_stock_data_yfinance.ipynb
 
 ### 📈 Extracting Stock Data Using Python

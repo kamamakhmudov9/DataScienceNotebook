@@ -29,3 +29,49 @@ Each folder represents a different project, often focusing on a particular **dat
 My goal with this repository is to **track my progress** and provide a **transparent look into my work**.  
 
 Feel free to explore the projects and dive into the code! 🚀
+
+## First Project: analyzing_stock_data_yfinance.ipynb
+
+### 📈 Extracting Stock Data Using Python
+
+This project demonstrates how to **extract, analyze, and visualize stock data** using the `yfinance` library in Python.  
+The lab focuses on **Apple (AAPL)** and **AMD (Advanced Micro Devices)** stock data, covering key financial concepts and hands-on data extraction techniques.
+
+---
+
+### 📝 About
+
+A company's stock share is a piece of ownership in that company.  
+- **Stock (Equity):** A security that represents ownership of a fraction of a corporation.  
+- **Shares:** Units of stock.  
+- **Trading:** Investors buy and sell shares daily, and prices fluctuate based on market dynamics.  
+- **Ticker:** A continuously updated report of a stock's price provided by market exchanges.
+
+As a **data scientist at a hedge fund**, your job is to detect suspicious activity in stock trading. This lab shows how to extract, clean, and explore stock data with Python.
+
+---
+
+### 🔧 Tools & Libraries
+
+- [yfinance](https://pypi.org/project/yfinance/) → To fetch stock market data.  
+- [pandas](https://pandas.pydata.org/) → For data manipulation and analysis.  
+- [matplotlib](https://matplotlib.org/) → For plotting stock trends.  
+- [json](https://docs.python.org/3/library/json.html) → For working with JSON datasets.  
+
+---
+
+### 📂 Data Sources
+
+- **Live Data:** Retrieved directly from Yahoo Finance via the `yfinance` API.  
+- **Static Data:** Provided JSON files (`apple.json`, `amd.json`) for offline practice.  
+
+---
+
+### 🚀 Workflow
+
+### 1. Extract Stock Info
+```python
+import yfinance as yf
+apple = yf.Ticker("AAPL")
+apple.info
+

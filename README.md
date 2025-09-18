@@ -51,4 +51,39 @@ As a **data scientist at a hedge fund**, your job is to detect suspicious activi
 ### 📂 Data Sources
 
 - **Live Data:** Retrieved directly from Yahoo Finance via the `yfinance` API.  
-- **Static Data:** Provided JSON files (`apple.json`, `amd.json`) for offline practice.  
+- **Static Data:** Provided JSON files (`apple.json`, `amd.json`) for offline practice.
+
+---
+
+## Second Project: extracting_stock_data_webscraping.ipynb
+
+### 🌐 Extracting Stock Data Using Web Scraping
+
+Not all stock data is available via APIs like `yfinance`.  
+In this project, we use **web scraping techniques** with **BeautifulSoup** and **pandas** to extract stock data directly from HTML tables.
+
+### 📝 About
+
+The focus is on **Netflix (NFLX)** and **Amazon (AMZN)** historical stock data.  
+The workflow follows these steps:
+
+1. **Send HTTP Request** → Fetch web page HTML with `requests`.  
+2. **Parse HTML** → Use `BeautifulSoup` to structure the data.  
+3. **Identify Table Elements** → Locate `<table>`, `<tr>`, `<td>` tags.  
+4. **Extract Data** → Loop through rows and collect stock data.  
+5. **Convert to DataFrame** → Store results in `pandas.DataFrame`.  
+
+We also explore an alternative approach using **`pandas.read_html()`** for extracting tables directly.  
+
+### 🔧 Tools & Libraries
+
+- [requests](https://pypi.org/project/requests/) → To fetch web pages.  
+- [BeautifulSoup (bs4)](https://pypi.org/project/beautifulsoup4/) → For parsing HTML.  
+- [pandas](https://pandas.pydata.org/) → For tabular data handling.  
+- [plotly](https://plotly.com/python/) → For interactive visualization.  
+
+### 📂 Data Sources
+
+- **Netflix Data:** Static HTML file ([netflix_data_webpage.html](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0220EN-SkillsNetwork/labs/project/netflix_data_webpage.html))  
+- **Amazon Data (Exercise):** Static HTML file ([amazon_data_webpage.html](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0220EN-SkillsNetwork/labs/project/amazon_data_webpage.html))  
+
